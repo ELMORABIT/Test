@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="ELMORABIT">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">  
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================================================= NAVBAR ================================================= -->
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="ion-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Mini Projet</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Accueil</a></li>
+                <li class="active"><a href="#about">Doctorants</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Mathématiques</a></li>
+                    <li><a href="#">Informatique</a></li>
+                    <li><a href="#">Physique</a></li>
+                    <li><a href="#">Chimie</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Top Articles</li>
+                    <li><a href="#">Par Université</a></li>
+                    <li><a href="#">Par Thèmes</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact" data-toggle="modal">Contactez-nous</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+        	<form class="navbar-form navbar-right" role="search">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Recherche">
+			        </div>
+		        	<button type="submit" class="btn btn-default">Chercher</button>
+		    </form>
+        </div>
+
+      </div>
+    </div>
+<!-- ================================================= # END NAVBAR # ================================================= -->
+
+<!-- ================================================= # Accordion # ================================================== -->
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <div class="container">
+   	<div class="table-responsive">
+  		<table class="table">
+    		<caption><h4>Liste des Doctorants</h4></caption>
+    		<thead>
+    			<tr>
+                    <th>ID</th>
+    				<th>Nom</th>
+    				<th>Prénom</th>
+    				<th>E-mail</th>
+                    <th>Action</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr>
+                    <td>1</td>
+    				<td>EL MORABIT</td>
+    				<td>Mohamed</td>
+    				<td>Morabit010@gmail.com</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-pencil" data-toggle="tooltip" title="Modifier"></a>
+                        <a href="#" class="glyphicon glyphicon-trash" data-toggle="tooltip" title="Supprimer"></a>
+                    </td>
+    			</tr>
+    			<tr>
+                    <td>2</td>
+    				<td>EL MORABIT</td>
+    				<td>Mohamed</td>
+    				<td>Morabit010@gmail.com</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-pencil" data-toggle="tooltip" title="Modifier"></a>
+                        <a href="#" class="glyphicon glyphicon-trash" data-toggle="tooltip" title="Supprimer"></a>
+                    </td>
+    			</tr>
+    			<tr>
+                    <td>3</td>
+    				<td>EL MORABIT</td>
+    				<td>Mohamed</td>
+    				<td>Morabit010@gmail.com</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-pencil" data-toggle="tooltip" title="Modifier"></a>
+                        <a href="#" class="glyphicon glyphicon-trash" data-toggle="tooltip" title="Supprimer"></a>
+                    </td>
+    			</tr>
+    		</tbody>
+  		</table>
+	</div>
+	<br/><br/>  	
+    		<div class="md-12">
+    			<div class="panel-group" id="accordion">
+    				<div class="panel panel-default">
+    					<div class="panelHeading">
+    						<h5 class="text-center">
+    						<a data-toggle="collapse" data-parent="#accordion" href="#section1">
+    							Ajouter un nouveau doctorant
+    						</a>
+    						</h5>
+    					</div>
+    					<div class="panel-collapse collapse" id="section1">
+    						<div class="panel-body">
+    							<div class="form">
+	    							<form class="well form-horizontal" role="form">
+	    								<legend>Enregistrer un nouveau doctorant</legend>
+	    								<div class="form-group">																					
+											<label for="input" class="col-sm-2 control-label">Nom</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" id="firstname" placeholder="Entrer le nom ...">
+											</div>
+										</div>
+											
+										<div class="form-group">
+											<label for="input" class="col-sm-2 control-label">Prénom</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" id="lastname"  placeholder="Entrer le prénom ...">
+											</div>
+										</div>
+
+										<div class="form-group">
+										    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+										    <div class="col-sm-10">
+										      <input type="email" class="form-control" id="inputEmail3" placeholder="Email ...">
+										    </div>
+										</div>
+
+										<div class="form-group navbar-right">
+											<div>
+												<button type="submit" class="btn btn-primary">Sauvegarder</button>
+												<button class="btn btn-danger">Annuler</button>
+											</div>
+										</div>
+									</form>
+								</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+<!-- =============================================== # END ACCORDION # ================================================ -->
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Haut de la page</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+<!-- =============================================== # POPUP # ================================================ -->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Contactez-nous</h4>
+                    <div class="modal-body">
+                        <form class="well form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email ...">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="inputtext" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="3" placeholder="Message ..."></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+  </body>
+</html>
